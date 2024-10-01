@@ -1,15 +1,19 @@
-import Home from "../../Home/Home";
-import Test from "../../Test/Test";
-// navItems.js
+import { FaSyringe, FaUserMd } from "react-icons/fa";
+import Pelayanan from "../../Page/Pelayanan/Pelayanan";
+import Poliklinik from "../../Page/Poliklinik/Poliklinik";
 export const WebLink = [
     { 
-        path: '/', 
-        label: 'Home',
-        component: <Home />
+        path: '/pelayanan', 
+        label: 'PELAYANAN',
+        component: <Pelayanan />,
+        icon:  <FaUserMd/>
     },
     { 
-        path: '/test', 
-        label: 'Test',
-        component: <Test />
+        path: '/poliklinik', 
+        label: 'POLIKLINIK',
+        component: <Poliklinik />,
+        icon:  <FaSyringe/>
     },
 ];
+
+
