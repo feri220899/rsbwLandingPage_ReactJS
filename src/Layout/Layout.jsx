@@ -1,6 +1,6 @@
 import React from 'react'
 import Navlink from './Header/Navlink'
-import { FaBars, FaHome, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaBars, FaMapMarkerAlt } from 'react-icons/fa'
 import logo from '../../public/img/rs.png'
 import Header from './Header/Header'
 
