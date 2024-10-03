@@ -2,19 +2,19 @@
 import Layout from '../../Layout/Layout'
 import Carousel from './component/Carousel'
 import Insurance from './component/Insurance'
-
-
+import Mockup from './component/Mockup'
 
 function Home() {
-  
+
 
   return (
     <Layout>
-      <Carousel />
-      <Insurance/>
-      <div className="hero h-screen bg-black" name='section3'>
-        <h1 className="text-5xl font-bold">section3 now!</h1>
-      </div>
+      <Carousel />      
+      <Mockup/>
+      <Insurance />
+
+
+
     </Layout>
   )
 }

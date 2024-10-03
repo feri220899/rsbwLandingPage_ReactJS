@@ -3,6 +3,9 @@ import bpjs_img from '../../../../public/img/support/bpjs_img.png'
 import aia_img from '../../../../public/img/support/aia_img.png'
 import car_img from '../../../../public/img/support/car_img.png'
 import adira_img from '../../../../public/img/support/adira_img.png'
+import zurich_img from '../../../../public/img/support/zurich_img.png'
+import berdikasi_img from '../../../../public/img/support/berdikasi_img.png'
+import bintang_img from '../../../../public/img/support/bintang_img.png'
 function Insurance() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -16,9 +19,9 @@ function Insurance() {
         },
         {
             id: 1,
-            imageUrl1: 'e',
-            imageUrl2: 'f',
-            imageUrl3: 'g',
+            imageUrl1: zurich_img,
+            imageUrl2: berdikasi_img,
+            imageUrl3: bintang_img,
             imageUrl4: 'h',
         },
     ];
@@ -33,9 +36,9 @@ function Insurance() {
     };
     return (
         <>
-            <div className="relative w-full overflow-hidden">
-                <div className='flex items-center justify-center mb-3 text-lg text-black'>
-                    Kerja Sama Kami
+            <div className="relative h-full w-full overflow-hidden ">
+                <div className='flex items-center justify-center mb-3 text-lg font-bold mt-28'>
+                    KERJA SAMA KAMI
                 </div>
                 <div
                     className="flex transition-transform duration-700 ease-in-out"
@@ -52,28 +55,28 @@ function Insurance() {
                                     <div className=" flex items-center justify-center">
                                         <div className="card ">
                                             <img
-                                                src={slide.imageUrl1} className='w-full max-w-56'
+                                                src={slide.imageUrl1} className='w-full max-w-48'
                                                 alt="Shoes" />
                                         </div>
                                     </div>
                                     <div className="flex items-center justify-center">
                                         <div className="card">
                                             <img
-                                                src={slide.imageUrl2} className='w-full max-w-56'
+                                                src={slide.imageUrl2} className='w-full max-w-48'
                                                 alt="Shoes" />
                                         </div>
                                     </div>
                                     <div className="flex items-center justify-center">
                                         <div className="card">
                                             <img
-                                                src={slide.imageUrl3} className='w-full max-w-56'
+                                                src={slide.imageUrl3} className='w-full max-w-48'
                                                 alt="Shoes" />
                                         </div>
                                     </div>
                                     <div className="flex items-center justify-center">
                                         <div className="card">
                                             <img
-                                                src={slide.imageUrl4} className='w-full max-w-56'
+                                                src={slide.imageUrl4} className='w-full max-w-48'
                                                 alt="Insurance" />
                                         </div>
                                     </div>
@@ -88,3 +91,6 @@ function Insurance() {
 }
 
 export default Insurance
+
+
+

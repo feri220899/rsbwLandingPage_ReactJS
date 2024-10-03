@@ -47,7 +47,7 @@ function Carousel() {
 
     return (
         <>
-            <FramerMotion>
+            <FramerMotion initial='Carousel'>
                 <div className="relative w-full h-screen overflow-hidden">
                     <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                         {slides.map((slide) => (

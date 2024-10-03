@@ -10,7 +10,7 @@ function Layout({ children }) {
       <div className="drawer scroll-smooth">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         {/* Header */}
-        <div className="drawer-content flex flex-col p-2 bg-stone-100 " name='section_home'>
+        <div className="drawer-content flex flex-col  bg-stone-100 " name='section_home'>
           <Header />
           {/* Navbar */}
           <div className="navbar bg-white  bg-opacity-50 shadow-md rounded-md px-2 lg:px-10 sticky top-0 z-50">

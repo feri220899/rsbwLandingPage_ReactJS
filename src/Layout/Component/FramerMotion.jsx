@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
-function FramerMotion({ children }) {
+function FramerMotion({ initial,children }) {
     const controls = useAnimation();
 
     useEffect(() => {
@@ -15,7 +15,7 @@ function FramerMotion({ children }) {
             },
             { threshold: 0.5 } // Memicu animasi ketika 50% elemen terlihat
         );
-        const element = document.querySelector("#animatedDiv");
+        const element = document.querySelector(`#${initial}`);
         if (element) {
             observer.observe(element);
         }
@@ -28,7 +28,7 @@ function FramerMotion({ children }) {
         visible: { opacity: 1, y: 0, transition: { duration: 1 } },
     };
     return (
-        <motion.div id="animatedDiv" initial="hidden" animate={controls} variants={variants}>
+        <motion.div id={initial} initial="hidden" animate={controls} variants={variants}>
             {children}
         </motion.div>
     )
